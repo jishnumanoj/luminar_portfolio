@@ -1,0 +1,98 @@
+======================================================================
+                  INSTITUTION API DOCUMENTATION
+======================================================================
+
+Base URL: http://127.0.0.1:8000/
+Authentication: None (Public)
+Default Request Header:
+  Accept: application/json
+
+----------------------------------------------------------------------
+1. ABOUT ENDPOINT
+----------------------------------------------------------------------
+Description: Retrieves general institutional details and primary services.
+
+URL: /about/
+HTTP Method: GET
+Headers:
+  Accept: application/json
+
+Response (200 OK):
+{
+    "institution": "Luminartechnolab",
+    "service": "software development training"
+}
+
+
+----------------------------------------------------------------------
+2. COURSES ENDPOINT
+----------------------------------------------------------------------
+Description: Retrieves the list of available training programs.
+
+URL: /courses/
+HTTP Method: GET
+Headers:
+  Accept: application/json
+
+Response (200 OK):
+[
+    {
+        "id": 1,
+        "title": "Python Full Stack Development",
+        "duration": "5 Months",
+        "technologies": ["Python", "Django", "React", "MySQL"]
+    },
+    {
+        "id": 2,
+        "title": "Data Science & AI",
+        "duration": "4 Months",
+        "technologies": ["Python", "Machine Learning", "Generative AI"]
+    }
+]
+
+
+----------------------------------------------------------------------
+3. TRAINERS ENDPOINT
+----------------------------------------------------------------------
+Description: Retrieves the list of faculty members and their expertise.
+
+URL: /trainers/
+HTTP Method: GET
+Headers:
+  Accept: application/json
+
+Response (200 OK):
+[
+    {
+        "id": 1,
+        "name": "Faculty Lead",
+        "expertise": "Python, Django, Full-Stack",
+        "campus": "Kakkanad & Thrissur"
+    }
+]
+
+
+----------------------------------------------------------------------
+4. BRANCHES ENDPOINT
+----------------------------------------------------------------------
+Description: Retrieves campus locations and branches.
+
+URL: /branches/
+HTTP Method: GET
+Headers:
+  Accept: application/json
+
+Response (200 OK):
+[
+    {
+        "id": 1,
+        "city": "Kakkanad",
+        "region": "Ernakulam"
+    },
+    {
+        "id": 2,
+        "city": "Thrissur",
+        "region": "Thrissur Round"
+    }
+]
+======================================================================

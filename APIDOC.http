@@ -1,0 +1,15 @@
+# api call for about
+###
+GET http://127.0.0.1:8000/about/
+
+# api call for course
+###
+GET http://127.0.0.1:8000/courses/
+
+# api call for trainer
+###
+GET http://127.0.0.1:8000/trainers/
+
+# api call for branch
+###
+GET http://127.0.0.1:8000/branches/
